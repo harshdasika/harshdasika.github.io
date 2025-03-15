@@ -1,44 +1,245 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Harsh Dasika</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Bootstrap Icons - lightweight and comprehensive -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+  <style>
+    /* Inline style to fix header positioning */
+    body {
+      padding-top: 140px; /* Adjust based on your header height */
+    }
+    
+    @media (min-width: 640px) {
+      body {
+        padding-top: 100px; /* Less padding on larger screens */
+      }
+    }
+  </style>
+</head>
+<body class="bg-[#121212] text-white" style="cursor: default;">
+  <!-- Fixed header -->
+  <header>
+    <div class="max-w-3xl mx-auto px-4 py-4 flex flex-col sm:flex-row justify-between items-center">
+      <div class="flex items-center mb-2 sm:mb-0">
+        <img alt="Harsh Dasika" class="w-10 h-10 rounded-lg mr-3 object-cover" src="assets/images/me.png">
+        <h1 class="text-3xl sm:text-4xl font-bold text-left">Harsh Dasika</h1>
+      </div>
+      <div class="flex space-x-2">
+        <a class="p-2 hover:bg-gray-800 rounded" href="https://github.com/harshdasika" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="bi bi-github h-5 w-5"></i>
+        </a>
+        <a class="p-2 hover:bg-gray-800 rounded" href="https://www.linkedin.com/in/harsh-dasika/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="bi bi-linkedin h-5 w-5"></i>
+        </a>
+        <a class="p-2 hover:bg-gray-800 rounded" href="https://x.com/harshdasika" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+          <i class="bi bi-twitter-x h-5 w-5"></i>
+        </a>
+        <a class="p-2 hover:bg-gray-800 rounded" href="mailto:harsh.dasika@gmail.com" aria-label="Email">
+          <i class="bi bi-envelope h-5 w-5"></i>
+        </a>
+        <a class="p-2 hover:bg-gray-800 rounded" href="https://drive.google.com/file/d/1qJ-oTaVwsw0YV_Qeq5dILHFVcJTlvvPK/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Resume">
+          <i class="bi bi-file-earmark-text h-5 w-5"></i>
+        </a>
+      </div>
+    </div>
+  </header>
 
-<html>
-	<head>
-		<title>Harsh Dasika</title>
-        <link rel="icon" type="image/x-icon" href="assets/css/images/favicon.ico">
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<div id="wrapper">
-			<div id="bg"></div>
-			<div id="overlay"></div>
-			<div id="main">
+  <!-- Main content -->
+  <main>
+    <div class="max-w-3xl mx-auto px-4 sm:px-0 space-y-6">
+      <p class="text-md sm:text-lg leading-relaxed">
+        Hey 👋 - I'm Harsh. At the moment, I'm a M.S. student diving deep into AI at Case Western.
+      </p>
+      <p class="text-md sm:text-lg leading-relaxed">
+        I've worked on enhancing AI platforms for fraud prevention, streamlined enterprise data systems, and helped a number of small businesses with modernizing their digital infrastructure. My passion projects explore everything from automating sports content generation to making language models more efficient and secure.
+      </p>
+      <p class="text-md sm:text-lg leading-relaxed">
+        Currently based in Cleveland, but my home base is Chicago.
+      </p>
 
-				<!-- Header -->
-					<header id="header">
-						<h1>Harsh Dasika</h1>
-						<p>M.S. in Computer Science &nbsp;&bull;&nbsp; CWRU &nbsp;&bull;&nbsp; AI/ML Track</p>
-						<nav>
-							<ul>
-								<li><a href="https://www.linkedin.com/in/harsh-dasika/" target="_blank" rel="noopener noreferrer" class="icon brands fa-linkedin" title="LinkedIn"><span class="label">LinkedIn</span></a></li>
-                                
-								<li><a href="https://github.com/harshdasika" target="_blank" rel="noopener noreferrer" class="icon brands fa-github" title="GitHub"><span class="label">Github</span></a></li>
-                                
-								<li><a href="https://devpost.com/harshdasika" target="_blank" rel="noopener noreferrer" class="icon brands fa-dev" title="Devpost Portfolio"><span class="label">Email</span></a></li>
-                                
-                                				<li><a href="https://drive.google.com/file/d/1qJ-oTaVwsw0YV_Qeq5dILHFVcJTlvvPK/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="fa-regular fa-file-lines" title="Resume"><span class="label">Resume</span></a></li>
-							</ul>
-						</nav>
-					</header>
+      <section>
+        <div class="flex justify-between items-center mb-2">
+          <h2 class="text-md sm:text-lg font-light">Work</h2>
+        </div>
+        <div class="space-y-2">
+          <div class="work-item">
+            <a class="block py-2 hover:bg-gray-800 rounded cursor-pointer w-full" data-target="work1" href="#">
+              <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                  <img alt="Cartesia Logo" class="logo" src="assets/images/Stealth.png">
+                  <div>
+                    <p class="font-medium">Stealth Fintech Startup <span class="text-sm text-gray-500">AI Engineer</span></p>
+                  </div>
+                </div>
+                <span class="text-sm text-gray-500">2024</span>
+              </div>
+            </a>
+            <div class="expandable pl-12 pr-2 text-sm text-gray-300" id="work1">
+              <p>Enhanced market intelligence capabilities for an AI-powered fraud prevention platform aimed at streamlining B2B identity verification.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">OpenAI</span>
+                <span class="tech-tag">LangChain</span>
+                <span class="tech-tag">Neo4j</span>
+              </div>
+            </div>
+            <div class="border-b"></div>
+          </div>
+          <div class="work-item">
+            <a class="block py-2 hover:bg-gray-800 rounded cursor-pointer w-full" data-target="work2" href="#">
+              <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                  <img alt="CoFrame Logo" class="logo" src="assets/images/CAT.png">
+                  <div>
+                    <p class="font-medium">Caterpillar <span class="text-sm text-gray-500">Software Engineer, CAT Digital</span></p>
+                  </div>
+                </div>
+                <span class="text-sm text-gray-500">2021</span>
+              </div>
+            </a>
+            <div class="expandable pl-12 pr-2 text-sm text-gray-300" id="work2">
+              <p>Developed and deployed scripts to automate the migration and validation of data from enterprise sources into AWS. Winner at 2021 intern hackathon - prototyped B2B e-comm platform enabling CAT to sell construction materials directly to customers.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">AWS</span>
+                <span class="tech-tag">Confluence</span>
+              </div>
+            </div>
+            <div class="border-b"></div>
+          </div>
+        </div>
+      </section>
 
-			</div>
-		</div>
-		<script>
-			window.onload = function() { document.body.classList.remove('is-preload'); }
-			window.ontouchmove = function() { return false; }
-			window.onorientationchange = function() { document.body.scrollTop = 0; }
-		</script>
-	</body>
+      <section>
+        <div class="flex justify-between items-center mb-2">
+          <h2 class="text-md sm:text-lg font-light">Projects</h2>
+        </div>
+        <div class="space-y-2">
+          <div class="build-item">
+            <a class="block py-2 hover:bg-gray-800 rounded cursor-pointer w-full" data-target="build1" href="#">
+              <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                  <img alt="illustrato Logo" class="logo" src="assets/images/paintbrush.png">
+                  <div>
+                    <p class="font-medium">illustrato <span class="text-sm text-gray-500">Community-driven digital gallery for artists and AI creators</span></p>
+                  </div>
+                </div>
+                <span class="text-sm text-gray-500">2025</span>
+              </div>
+            </a>
+            <div class="expandable pl-12 pr-2 text-sm text-gray-300" id="build1">
+              <p>illustrato is where creativity meets community. A place for digital artists — both human and AI-assisted — to showcase their work, gain inspiration, and connect with a global audience.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">React</span>
+                <span class="tech-tag">Next.js</span>
+                <span class="tech-tag">Typescript</span>
+                <span class="tech-tag">Vercel</span>
+                <span class="tech-tag">Supabase</span>
+                <span class="tech-tag">Stripe</span>
+              </div>
+            </div>
+            <div class="border-b"></div>
+          </div>
+          
+          <div class="build-item">
+            <a class="block py-2 hover:bg-gray-800 rounded cursor-pointer w-full" data-target="build2" href="#">
+              <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                  <img alt="SportsClips Logo" class="logo" src="assets/images/clover.png">
+                  <div>
+                    <p class="font-medium">SportsClips <span class="text-sm text-gray-500">Automated NBA highlight reel maker</span></p>
+                  </div>
+                </div>
+                <span class="text-sm text-gray-500">2024</span>
+              </div>
+            </a>
+            <div class="expandable pl-12 pr-2 text-sm text-gray-300" id="build2">
+              <p>SportsClips automates the generation of highlight reels for NBA games using audio and video analysis.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">AWS</span>
+                <span class="tech-tag">Ollama</span>
+                <span class="tech-tag">LLaVA</span>
+                <span class="tech-tag">Librosa</span>
+                <span class="tech-tag">FFmpeg</span>
+              </div>
+            </div>
+            <div class="border-b"></div>
+          </div>
+          
+          <div class="build-item">
+            <a class="block py-2 hover:bg-gray-800 rounded cursor-pointer w-full" data-target="build3" href="#">
+              <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                  <img alt="Lightspeed Logo" class="logo" src="assets/images/nlp.png">
+                  <div>
+                    <p class="font-medium">NLP Watermarker <span class="text-sm text-gray-500">Rapid Deployment Solutions</span></p>
+                  </div>
+                </div>
+                <span class="text-sm text-gray-500">2024</span>
+              </div>
+            </a>
+            <div class="expandable pl-12 pr-2 text-sm text-gray-300" id="build3">
+              <p>A variety of NLP watermarking algorithms which embed and detect hidden attribution markers in LLM-generated text, allowing users to verify whether text was written by a human or AI.</p>
+              <div class="tech-tags">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">PyTorch</span>
+                <span class="tech-tag">Hugging Face Transformers</span>
+                <span class="tech-tag">Facebook OPT-LMs</span>
+              </div>
+            </div>
+            <div class="border-b"></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="max-w-3xl mx-auto px-4 py-4 flex justify-center items-center mt-8">
+    <p class="text-sm text-gray-400">© 2025 Harsh Dasika</p>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Toggle panel function for expandable sections
+      function togglePanel(event) {
+        event.preventDefault();
+        const targetId = event.currentTarget.getAttribute("data-target");
+        const panel = document.getElementById(targetId);
+        panel.classList.toggle("open");
+        
+        // Remove focus from the clicked element
+        event.currentTarget.blur();
+      }
+      
+      // Add event listeners to clickable items
+      const clickableItems = document.querySelectorAll(".work-item a, .build-item a");
+      clickableItems.forEach(item => {
+        item.addEventListener("click", togglePanel);
+        
+        // Also remove outline on mousedown to prevent the focus outline from showing at all
+        item.addEventListener("mousedown", function(e) {
+          e.preventDefault();
+        });
+      });
+      
+      // Add scroll effect to header for transparency change
+      const header = document.querySelector('header');
+      window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+    });
+  </script>
+</body>
 </html>
