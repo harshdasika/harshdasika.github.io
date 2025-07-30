@@ -21,13 +21,19 @@ header.scrolled {
 .expandable {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), 
+              opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+              padding 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .expandable.open {
-  max-height: 500px;
+  max-height: 300px; /* Reduced from 500px for better performance */
   opacity: 1;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
 }
 
 /* Tech tags styling */
